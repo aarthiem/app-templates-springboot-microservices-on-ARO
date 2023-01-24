@@ -28,7 +28,9 @@ on:
     paths-ignore:
       - '*.md'
       - '*.png'
-
+ # We also want to be able to run this manually from Github
+  workflow_dispatch:
+  
 env:
   LOCATION: 'westus'
   HUB_VNET: 'hub-vnet'
